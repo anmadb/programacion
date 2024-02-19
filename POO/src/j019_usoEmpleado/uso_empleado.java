@@ -146,6 +146,17 @@ class empleado {
 	
 
 	}
+	public empleado(String nom) {
+		nombre = nom;
+		sueldo = 0;
+		
+		GregorianCalendar calendario = new GregorianCalendar();
+		Date alta_contrato = calendario.getTime();
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+		fechaFormateada = sdf.format(alta_contrato);
+		anio_contrato = calendario.get(GregorianCalendar.YEAR);
+		
+	}
 
 	public String dameNombre() {
 		return nombre;

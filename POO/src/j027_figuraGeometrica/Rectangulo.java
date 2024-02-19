@@ -11,6 +11,13 @@ class Rectangulo extends FiguraGeometrica {
         this.base = a;
         this.altura = b;
     }
+    
+    public Rectangulo(String base) {
+    	double a = Double.parseDouble(base);
+    	
+        this.base = a;
+        this.altura = 30;
+    }
 
     @Override
     public double calcularArea() {
